@@ -1,0 +1,36 @@
+.main-container {
+  display: flex;
+
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.container {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.item-container {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 100px;
+}
+
+.item-container li {
+  padding: 5px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  cursor: move;
+}
+
+.success-message {
+  color: rgb(6, 123, 6);
+  font-weight: bold;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <!-- The first container with a list of items -->
+        <h2>Container 1</h2>
+        <ul
+          id="container1"
+          class="item-container"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <li draggable="true" ondragstart="drag(event)">Text 1</li>
+          <li draggable="true" ondragstart="drag(event)">Text 2</li>
+          <li draggable="true" ondragstart="drag(event)">Text 3</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <!-- The second container where items can be dropped -->
+        <h2>Container 2</h2>
+        <ul
+          id="container2"
+          class="item-container"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></ul>
+        <button onclick="resetContainers()">Reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
